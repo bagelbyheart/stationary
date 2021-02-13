@@ -38,7 +38,7 @@
  --cAccent:var(--lux2);
  --lightImg:url('http://bagelbyheart.com/CherryLow.png');
  --darkImg:url('http://bagelbyheart.com/shorelineLightLow.png');
- /* background-image:var(--darkImg); */
+ background-image:var(--darkImg);
  background-color:var(--cPaper);
  background-size:cover;
  background-attachment:fixed;
@@ -60,8 +60,10 @@
 
 body {
 	padding:0;
-	padding-left:16px;
-	width:46em;
+	padding:0 16px;
+	max-width:768px;
+	min-width:512px;
+	margin:auto;
 }
 
 p, pre, table, h1,h2,h3,h4, h5 {
@@ -73,6 +75,7 @@ h1,h2,h3,h4,h5 {
 	border-left:solid 16px var(--cAccent);
 	background-color:var(--cForeground);
 	color:var(--cBackground);
+	margin-top:0;
 	margin-bottom:16px;
 }
 
@@ -84,17 +87,26 @@ th, td {
 	padding: .25em;
 }
 
+tr:nth-child(odd)		{ background-color:var(--lux8); }
+tr:nth-child(even)		{ background-color:var(--lux4); }
+
 pre, code {
 	font-family: 'fira mono';
 	font-size:smaller;
 }
 
 pre {
+	tab-size:4;
 	border:solid 4px var(--lux3);
 	border-radius:4px;
 	background-color:var(--lux4);
 	margin:0 16px;
 	padding:4px;
+	background-image:linear-gradient(var(--lux8) 50%, var(--lux4) 50%);
+	background-position: 4 4;
+    background-repeat: repeat;
+    background-size: 2.3em 2.3em;
+	overflow-x:scroll;
 }
 
 code {
