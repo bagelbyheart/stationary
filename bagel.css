@@ -6,6 +6,11 @@
  --lux2:#50506e;
  --lux3:#bebee6;
  --lux4:#e6e6ff;
+ --luxOchre:#c5503d;
+ --lux5:#481c12;
+ --lux6:#7a4e44;
+ --lux7:#f6bbae;
+ --lux8:#ffeae6;
  --soBoldBlack:rgb(0, 43, 54);
  --soBoldYellow:rgb(101, 123, 131);
  --soBoldCyan:rgb(147, 161, 161);
@@ -27,10 +32,10 @@
  --soAccent:var(--soBoldWhite);
  --soForeground:var(--soWhite);
  --soCursor:var(--soBoldMagenta);
- --cForeground:var(--soWhite);
- --cBackground:var(--soBlack);
- --cPaper:var(--soBoldGreen);
- --cAccent:var(--soBoldMagenta);
+ --cForeground:var(--lux5);
+ --cBackground:var(--lux8);
+ --cPaper:var(--lux6);
+ --cAccent:var(--lux2);
  --lightImg:url('http://bagelbyheart.com/CherryLow.png');
  --darkImg:url('http://bagelbyheart.com/shorelineLightLow.png');
  /* background-image:var(--darkImg); */
@@ -46,7 +51,7 @@
 }
 
 * {
-	/*border:solid 1px var(--cForeground); /* debugging */
+	/* border:solid 1px var(--cForeground); /* debugging */
 	margin:0;
 	padding:0;
 	font-family:'fira sans';
