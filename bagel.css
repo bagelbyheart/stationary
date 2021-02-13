@@ -64,7 +64,7 @@ body {
 	width:46em;
 }
 
-p, table, h1,h2,h3,h4, h5 {
+p, pre, table, h1,h2,h3,h4, h5 {
 	padding:8px;
 	padding-left:16px;
 }
@@ -84,8 +84,24 @@ th, td {
 	padding: .25em;
 }
 
-pre {
+pre, code {
 	font-family: 'fira mono';
+	font-size:smaller;
+}
+
+pre {
+	border:solid 4px var(--lux3);
+	border-radius:4px;
+	background-color:var(--lux4);
+	margin:0 16px;
+	padding:4px;
+}
+
+code {
+	border:solid 2px var(--lux3);
+	border-radius:2px;
+	background-color:var(--lux4);
+	padding:2px;
 }
 
 ol, ul {
@@ -101,6 +117,7 @@ ol, ul {
 .header, .footer, .content {
 	background-color:var(--cBackground);
 	border:solid 2px var(--cForeground);
+	border-radius:4px;
 	/* border-left:solid 16px var(--cAccent); */
 	padding-bottom:16px;
 }
