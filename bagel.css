@@ -1,13 +1,82 @@
+:root {
+ --redBlack:rgb(80,50,50);
+ --redWhite:rgb(230,225,225);
+ --Magenta:rgb(108, 113, 196);
+ --lux1:#1e1e3c;
+ --lux2:#50506e;
+ --lux3:#bebee6;
+ --lux4:#e6e6ff;
+ --soBoldBlack:rgb(0, 43, 54);
+ --soBoldYellow:rgb(101, 123, 131);
+ --soBoldCyan:rgb(147, 161, 161);
+ --soBoldWhite:rgb(253, 246, 227);
+ --soYellow:rgb(181, 137, 0);
+ --soRed:rgb(220, 50, 47);
+ --soBoldMagenta:rgb(108, 113, 196);
+ --soBlue:rgb(38, 139, 210);
+ --soCyan:rgb(42, 161, 152);
+ --soGreen:rgb(133, 153, 0);
+ --soMagenta:rgb(211, 54, 130);
+ --soBoldRed:rgb(203, 75, 22);
+ --soWhite:rgb(238, 232, 213);
+ --soBoldBlue:rgb(131, 148, 150);
+ --soBlack:rgb(7, 54, 66);
+ --soBoldGreen:rgb(88, 110, 117);
+ --soBackground:var(--soBlack);
+ --soHighlight:var(--soBoldBlack);
+ --soAccent:var(--soBoldWhite);
+ --soForeground:var(--soWhite);
+ --soCursor:var(--soBoldMagenta);
+ --cForeground:var(--soWhite);
+ --cBackground:var(--soBlack);
+ --cPaper:var(--soBoldGreen);
+ --cAccent:var(--soBoldMagenta);
+ --lightImg:url('http://bagelbyheart.com/CherryLow.png');
+ --darkImg:url('http://bagelbyheart.com/shorelineLightLow.png');
+ /* background-image:var(--darkImg); */
+ background-color:var(--cPaper);
+ background-size:cover;
+ background-attachment:fixed;
+ image-rendering: pixelated;
+}
+
+::selection {
+	background-color:var(--cAccent);
+	color:var(--cBackground);
+}
+
 * {
-	border:dashed 1px #303030;
+	/*border:solid 1px var(--cForeground); /* debugging */
 	margin:0;
-	padding:5px;
+	padding:0;
 	font-family:'fira sans';
-	color:rgb(60,20,20);
+	color:var(--cForeground);
 }
 
 body {
 	padding:0;
+	padding-left:16px;
+	width:46em;
+}
+
+p, table, h1,h2,h3,h4, h5 {
+	padding:8px;
+	padding-left:16px;
+}
+
+h1,h2,h3,h4,h5 {
+	border-left:solid 16px var(--cAccent);
+	background-color:var(--cForeground);
+	color:var(--cBackground);
+	margin-bottom:16px;
+}
+
+h3,h4,h5 {
+	margin-top:16px;
+}
+
+th, td {
+	padding: .25em;
 }
 
 pre {
@@ -15,21 +84,34 @@ pre {
 }
 
 ol, ul {
-	padding-inline-start:2em;	
+	padding:8px 0;
+	padding-inline-start:32px;
+}
+
+.header a {
+	display:inline-block;
+	padding:4px;
 }
 
 .header, .footer, .content {
-	background-color:rgb(230,225,225);
+	background-color:var(--cBackground);
+	border:solid 2px var(--cForeground);
+	/* border-left:solid 16px var(--cAccent); */
+	padding-bottom:16px;
+}
+
+.header, .footer {
+	padding:8px;
 }
 
 .header {
-	margin-bottom:1em;
+	margin-bottom:16px;
 }
 
 .footer {
-	margin-top:1em;
+	margin-top:16px;
 }
 
 .content {
-	margin:1em 0;
+	margin:16px 0;
 }
