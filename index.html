@@ -3,9 +3,6 @@
 <title>Bagelbyheart CSS Example</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-<link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
 <link rel="stylesheet" href="bagel.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
@@ -65,15 +62,23 @@ body {
 <h3>Unordered List</h3>
 <p>I'll test unordered list formatting here</p>
 <ul>
-<li>Item 1</li>
-<li>Item 2</li>
+<li>Item 1
+<ol><li>Nested Item</li></ol>
+<ul><li>Nested Item</li></ul>
+</li>
+<li>Item 2
+<ul><li>Nested Item</li></ul>
+</li>
 </ul>
 <p>And how text right after a list appears here</p>
 
 <h3>Ordered List</h3>
 <p>And ordered list formatting will go here</p>
 <ol>
-<li>Apples</li>
+<li>Apples
+<ul><li>Nested Item</li></ul>
+<ol><li>Nested Item</li></ol>
+</li>
 <li>Oranges</li>
 </ol>
 
